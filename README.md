@@ -1,7 +1,7 @@
 ## Background ##
 - I decided to use Poltergeist and Capybara as I did not want a Browser popping up while running my tests then closing the browsers.
-- If preferred the rspec can also test using the Selenium Driver which uses Firefox or we can also test using Selenium Chrome which allows us to test on Chrome.
-- To do this go to the capybara_driver_config.yml and change the value accordingly.
+- If preferred we can also test using the Selenium Driver which uses Firefox or we can also test using Selenium Chrome which allows us to test on Chrome.
+	- To do this go to the capybara_driver_config.yml and change the value accordingly.
 - Extra Notes/Assumptions:
     - If you are looking to test with Firefox or Chrome I assume you have those browsers installed.
 - If you have the following installed at each step feel free instructions in the step.
