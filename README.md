@@ -84,7 +84,7 @@
         - PATH %PATH%;C:\geckodriver-v0.19.1-win64
             
 8. Run Bundler 
-    - bundler install
+    - bundle install
 
 9. Run the tests
     - rspec
@@ -131,7 +131,7 @@
     - brew install geckodriver
 
 12. Run Bundler
-    - bundler install
+    - bundle install
 
 13. Run the tests    
     - rspec
