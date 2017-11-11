@@ -87,6 +87,9 @@
     - Extract it to C:\geckodriver-v0.19.1-win64
     - Set this directory to your system path
         - setx path "%path%;C:\geckodriver-v0.19.1-win64"
+	- Make sure your firefox.exe can be run on your command line, "firefox" will launch firefox from your command line.
+		- If not you may get this error, 
+		Selenium::WebDriver::Error::WebDriverError: Could not find Firefox binary (os=windows). Make sure Firefox is installed or set the path manually with Selenium::WebDriver::Firefox::Binary.path=
             
 8. Run Bundler 
     - bundle install
