@@ -59,8 +59,8 @@
 4. Install the necessary devkit and websocket-driver
     - https://rubyinstaller.org/downloads/
         - Download the DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe file.
-    - Move this to a directory such as C:\ and extract it there.
-        - Now open a command prompt and cd to C:\devkit
+    - Extract it to the C:\ directory
+        - Now cd to C:\devkit
             - Run ruby dk.rb init
             - Open config.yml and add - C:\Ruby23-x64 to the bottom of the file.
             - Run ruby dk.rb install
