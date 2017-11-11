@@ -69,8 +69,8 @@
 5. Install PhantomJS and add it to your PATH. (to test with Poltergeist)    
     - Go here http://phantomjs.org/download.html and download phantomjs-2.1.1-windows.zip. 
     - Extract it to a directory somewhere, i.e.: into C:, resulting in, C:\phantomjs-2.1.1-windows
-    - Now use the following command to it to the your path
-        - PATH %PATH%;C:\phantomjs-2.1.1-windows\bin
+    - Now use the following command to it to the your system path
+		-setx path "%path%;C:\phantomjs-2.1.1-windows\bin"
     - verify that it is working with the below command
         - phantomjs
             - you should see "phantomjs> "
@@ -79,14 +79,14 @@
     - Go here https://sites.google.com/a/chromium.org/chromedriver/downloads and download the latest release
     - Download the 32bit version for windows
     - Extract to C:\chromedriver_win32
-    - Set this directory to your path
-        - PATH %PATH%;C:\chromedriver_win32
+    - Set this directory to your system path
+        - setx path "%path%;C:\chromedriver_win32"
         
 7. Install GeckoDriver and add it to your path (to test with Firefox)
     - Go here https://github.com/mozilla/geckodriver/releases and download geckodriver-v0.19.1-win64.zip
     - Extract it to C:\geckodriver-v0.19.1-win64
-    - Set this directory to your path
-        - PATH %PATH%;C:\geckodriver-v0.19.1-win64
+    - Set this directory to your system path
+        - setx path "%path%;C:\geckodriver-v0.19.1-win64"
             
 8. Run Bundler 
     - bundle install
