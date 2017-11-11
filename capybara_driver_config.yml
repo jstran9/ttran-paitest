@@ -1,2 +1,2 @@
 # value 2 uses firefox, value 3 uses chrome, any other value will default to using poltergeist.
-driver: 2
+driver: 1
