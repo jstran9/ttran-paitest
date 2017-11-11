@@ -24,7 +24,7 @@
 5. Install PhantomJS, by running the .sh file I have provided (this is necessary for Poltergeist)
     - commands are:
     	- chmod +x helper_scripts_for_ubuntu/phantom_js_install.sh
-	- helper_scripts_for_ubuntu/phantom_js_install.sh
+	    - helper_scripts_for_ubuntu/phantom_js_install.sh
 	- you can verify the installation by running "phantomjs --version"
 
 6. Install the chrome driver (necessary if you choose to run the selenium_chromedriver)
