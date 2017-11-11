@@ -46,6 +46,14 @@
     
 ## Running on Windows 7 64 bit ##    
 
+- STARTER NOTE: For adding directories to your path use the following: (used in steps 5, 6, and 7 BELOW!!)
+	- Control Panel->All Control Panel Items->System->Advanced System Setttings->Environment Variables-->
+		- System variables (at the bottom)
+		- "Path" (system variable)
+		- Select Edit.. 
+		- Go to the end of the "Variable value:"
+			- Add a semicolon if it is not there then append the actual path "C:\Program Files\bin"
+			
 1. Download the RubyInstaller and install Ruby
 	- go to https://rubyinstaller.org/downloads/ and download ruby 2.3.3 (x64) 
 	- when walking through the installation make sure to check the option of "Add Ruby executables to your PATH"
@@ -69,8 +77,8 @@
 5. Install PhantomJS and add it to your PATH. (to test with Poltergeist)    
     - Go here http://phantomjs.org/download.html and download phantomjs-2.1.1-windows.zip. 
     - Extract it to a directory somewhere, i.e.: into C:, resulting in, C:\phantomjs-2.1.1-windows
-    - Now use the following command to it to the your system path
-		-setx path "%path%;C:\phantomjs-2.1.1-windows\bin"
+    - Now use the following command to it to the your system path (STARTER NOTE above)
+		- In the system variable, add to the variable value, "C:\phantomjs-2.1.1-windows\bin"
     - verify that it is working with the below command
         - phantomjs
             - you should see "phantomjs> "
@@ -79,14 +87,14 @@
     - Go here https://sites.google.com/a/chromium.org/chromedriver/downloads and download the latest release
     - Download the 32bit version for windows
     - Extract to C:\chromedriver_win32
-    - Set this directory to your system path
-        - setx path "%path%;C:\chromedriver_win32"
+    - Set this directory to your system path (STARTER NOTE above)
+		- In the system variable, add to the variable value, "C:\chromedriver_win32"
         
 7. Install GeckoDriver and add it to your path (to test with Firefox)
     - Go here https://github.com/mozilla/geckodriver/releases and download geckodriver-v0.19.1-win64.zip
     - Extract it to C:\geckodriver-v0.19.1-win64
-    - Set this directory to your system path
-        - setx path "%path%;C:\geckodriver-v0.19.1-win64"
+    - Set this directory to your system path (STARTER NOTE above)
+        - In the system variable, add to the variable value, C:\geckodriver-v0.19.1-win64"
 	- Make sure your firefox.exe can be run on your command line, "firefox" will launch firefox from your command line.
 		- If not you may get this error, 
 		Selenium::WebDriver::Error::WebDriverError: Could not find Firefox binary (os=windows). Make sure Firefox is installed or set the path manually with Selenium::WebDriver::Firefox::Binary.path=
