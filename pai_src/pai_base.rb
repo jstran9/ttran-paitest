@@ -4,6 +4,7 @@ class PaiBase
   def initialize
 
     set_capybara_driver
+	
     @pai_main_url = "http://pai-test.herokuapp.com/"
     @logout_text = "Logout"
     @form_submit_button_name = "[name=commit]"
@@ -41,7 +42,7 @@ class PaiBase
 
   def set_capybara_driver
     begin
-      config = YAML.load_file("capybara_driver_config.yml")
+	  config = YAML.load_file("config/capybara_driver_config.yml")
       if config["driver"].nil? then @driver_value = 1 end
     rescue Errno::ENOENT
       @driver_value = 1
