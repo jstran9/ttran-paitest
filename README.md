@@ -18,14 +18,14 @@
 3. Install Rspec
     - sudo apt install ruby-rspec-core
 
-4. Install necessary libraries for Nokogiri.
+4. Install necessary libraries for Nokogiri
     - sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev
 
 5. Install PhantomJS, by running the .sh file I have provided (this is necessary for Poltergeist)
     - commands are:
     	- chmod +x helper_scripts_for_ubuntu/phantom_js_install.sh
 	- helper_scripts_for_ubuntu/phantom_js_install.sh
-    - you can verify the installation by running "phantomjs --version"
+	- you can verify the installation by running "phantomjs --version"
 
 6. Install the chrome driver (necessary if you choose to run the selenium_chromedriver)
     - commands are:
@@ -37,11 +37,11 @@
     	- chmod +x helper_scripts_for_ubuntu/gecko_driver_install.sh
     	- helper_scripts_for_ubuntu/gecko_driver_install.sh
 
-8. Use bundler to get other necessary gems.
+8. Use bundler to get other necessary gems
     - bundle install
-    - make sure you run the command from step 4 or else the nokogiri gem will not install properly.
+    - make sure you run the command from step 4 or else the nokogiri gem will not install properly
 
-9. Now just run all the tests.
+9. Now just run all the tests
     - rspec
     
 ## Running on Windows 7 64 bit ##    
@@ -50,7 +50,7 @@
 	- go to https://rubyinstaller.org/downloads/ and download ruby 2.3.3 (x64) 
 	- when walking through the installation make sure to check the option of "Add Ruby executables to your PATH"
 	
-2. Open a command prompt and install bundler.	
+2. Open a command prompt and install bundler	
     - gem install bundler
 
 3. Install Rspec
@@ -69,23 +69,23 @@
 5. Install PhantomJS and add it to your PATH. (to test with Poltergeist)    
     - Go here http://phantomjs.org/download.html and download phantomjs-2.1.1-windows.zip. 
     - Extract it to a directory somewhere, i.e.: into C:, resulting in, C:\phantomjs-2.1.1-windows
-    - Now use the following command to it to the your path.
+    - Now use the following command to it to the your path
         - PATH %PATH%;C:\phantomjs-2.1.1-windows\bin
-    - verify that it is working with the below command.
+    - verify that it is working with the below command
         - phantomjs
             - you should see "phantomjs> "
  
 6. Install ChromeDriver and add it to your path (to test with Chrome)
     - Go here https://sites.google.com/a/chromium.org/chromedriver/downloads and download the latest release
-    - Download the 32bit version for windows.
+    - Download the 32bit version for windows
     - Extract to C:\chromedriver_win32
-    - Set this directory to your path.
+    - Set this directory to your path
         - PATH %PATH%;C:\chromedriver_win32
         
 7. Install GeckoDriver and add it to your path (to test with Firefox)
     - Go here https://github.com/mozilla/geckodriver/releases and download geckodriver-v0.19.1-win64.zip
     - Extract it to C:\geckodriver-v0.19.1-win64
-    - Set this directory to your path.
+    - Set this directory to your path
         - PATH %PATH%;C:\geckodriver-v0.19.1-win64
             
 8. Run Bundler 
@@ -104,7 +104,7 @@
     - https://brew.sh/
     - open a terminal and paste in the below command.
         - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    - I will be using Brew as the package manager so make sure to have it to follow the steps below.    
+    - I will be using Brew as the package manager so make sure to have it to follow the steps below    
 
 3. Install gpg2
     - brew install gpg2
