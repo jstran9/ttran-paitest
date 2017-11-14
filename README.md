@@ -126,6 +126,7 @@
  
 5. Install ruby 2.3 and switch to it
     - rvm install ruby-2.3.0
+    - rvm use 2.3.0
     
 6. Install Bundler
     - gem install bundler    
